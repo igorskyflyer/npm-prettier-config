@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/igorskyflyer/{{repo}}/main/media/{{pkg}}.png" alt="Icon of {{project}}" width="256" height="256">
-  <h1>{{project}}</h1>
+  <img src="https://raw.githubusercontent.com/igorskyflyer/prettier-config/refs/heads/main/media/prettier-config.png" alt="Icon of Prettier Config" width="256" height="256">
+  <h1>Prettier Config</h1>
 </div>
 
-<blockquote align="center"> •  •  • </blockquote>
+<blockquote align="center">  Single Quotes • No Semis • LF Endings • Zero-Config  </blockquote>
 
 <h4 align="center">
-  {{desc}}
+  💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, no trailing commas. 💄
 </h4>
 
 <br>
@@ -15,8 +15,6 @@
 
 - ✨ [**Features**](#features)
 - 🕵🏼 [**Usage**](#usage)
-- 🤹🏼 [**API**](#api)
-- 🗒️ [**Examples**](#examples)
 - ⚙️ [**Implementation**](#implementation)
 - 🎯 [**Motivation**](#motivation)
 - 📝 [**Changelog**](#changelog)
@@ -29,55 +27,80 @@
 
 ## Features
 
-- 
-- 
-- 
+- ⚡ Zero-config setup - extend and go
+- 🔤 Single quotes for JS/TS, double quotes for JSX
+- 🚫 No semicolons, no trailing commas - cleaner diffs
+- 📏 2-space indentation, LF line endings, 80-char print width
+- 📦 Covers JS, TS, JSX, TSX, JSON, HTML, CSS, Vue and more
+- 🎯 All valid Prettier options explicitly set - no surprises
+- 🔲 Collapsed object wrapping for consistent single-line output
+- 🔒 Experimental options locked in - no unintended behavior on upgrades
 
 <br>
 
 ## Usage
 
 Install it by executing any of the following, depending on the preferred package manager:
-
 ```bash
-pnpm add @igorskyflyer/{{pkg}}
+bun add -d @igorskyflyer/prettier-config
 ```
 
 ```bash
-yarn add @igorskyflyer/{{pkg}}
+pnpm add -D @igorskyflyer/prettier-config
 ```
 
 ```bash
-npm i @igorskyflyer/{{pkg}}
+yarn add -D @igorskyflyer/prettier-config
+```
+
+```bash
+npm i -D @igorskyflyer/prettier-config
 ```
 
 <br>
 
-## API
+Then, reference it in the `package.json`:
+```jsonc
+{
+  "prettier": "@igorskyflyer/prettier-config"
+}
+```
 
 <br>
 
-## Examples
+If overrides are needed, use a `prettier.config.js` instead:
+```js
+import config from '@igorskyflyer/prettier-config'
+
+export default {
+  ...config,
+  // overrides
+}
+```
 
 <br>
 
 ## Implementation
 
+Every valid Prettier option is explicitly set - no implicit defaults, no silent behavior on upgrades. The config enforces single quotes, no semicolons, no trailing commas, `LF` line endings and 2-space indentation across all supported file types. Object literals are preserved as-is. Experimental options are locked to their current defaults to prevent unintended formatting shifts when Prettier promotes them to stable.
+
 <br>
 
 ## Motivation
+
+Every project needs a Prettier config. Most end up with the same decisions after the same back-and-forth - quotes, semis, commas, line endings. This package makes those decisions once, documents them explicitly and ships them as a single dependency. Drop it in, extend it and move on.
 
 <br>
 
 ## Changelog
 
-Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/{{repo}}/blob/main/CHANGELOG.md).
+Read about the latest changes in the [**CHANGELOG**](https://github.com/igorskyflyer/npm-prettier-config/blob/main/CHANGELOG.md).
 
 <br>
 
 ## License
 
-Licensed under the [**MIT license**](https://github.com/igorskyflyer/{{repo}}/blob/main/LICENSE).
+Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-prettier-config/blob/main/LICENSE).
 
 <br>
 
@@ -99,27 +122,36 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/{{repo}}/bl
 
 ## Related
 
-[**ID**]()
+[**@igorskyflyer/editorconfig**](https://www.npmjs.com/package/@igorskyflyer/editorconfig)
 
-> _ID_
+> _✍🏼 A CLI tool for adding an opinionated EditorConfig to any project. 🐭_
 
-[**ID**]()
+<br>
 
-> _ID_
+[**@igorskyflyer/biome-config**](https://www.npmjs.com/package/@igorskyflyer/biome-config)
 
-[**ID**]()
+> _👽 An opinionated Biome configuration for modern JavaScript and TypeScript projects. Strict linting, consistent formatting, and performance-minded rules, all in one shareable config. Code like igorskyflyer does! 🐺_
 
-> _ID_
+<br>
 
-[**ID**]()
+[**@igorskyflyer/zing**](https://www.npmjs.com/package/@igorskyflyer/zing)
 
-> _ID_
+> _🐌 Zing is a C# style String formatter for JavaScript that empowers Strings with positional arguments - composite formatting. 🚀_
 
-[**ID**]()
+<br>
 
-> _ID_
+[**@igorskyflyer/oxfmt-config**](https://www.npmjs.com/package/@igorskyflyer/oxfmt-config)
+
+> _✨ Pixel-perfect code formatting opinions, oxfmt-powered and ready to extend. ⚓_
+
+<br>
+
+[**@igorskyflyer/zep**](https://www.npmjs.com/package/@igorskyflyer/zep)
+
+> _🧠 Zep is a zero-dependency, efficient debounce module. ⏰_
 
 <br>
 
 ## Author
-Created by **Igor Dimitrijević ([*@igorskyflyer*](https://github.com/igorskyflyer/))**.
+
+Created by **Igor Dimitrijević ([_@igorskyflyer_](https://github.com/igorskyflyer/))**.
