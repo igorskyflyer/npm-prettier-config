@@ -6,7 +6,7 @@
 <blockquote align="center">  Single Quotes • No Semis • LF Endings • Zero-Config  </blockquote>
 
 <h4 align="center">
-  💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, no trailing commas. 💄
+  💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, trailing commas. 💄
 </h4>
 
 <br>
@@ -29,11 +29,11 @@
 
 - ⚡ Zero-config setup - extend and go
 - 🔤 Single quotes for JS/TS, double quotes for JSX
-- 🚫 No semicolons, no trailing commas - cleaner diffs
+- 🚫 No semicolons, with trailing commas - cleaner diffs
 - 📏 2-space indentation, LF line endings, 80-char print width
 - 📦 Covers JS, TS, JSX, TSX, JSON, HTML, CSS, Vue and more
-- 🎯 All valid Prettier options explicitly set - no surprises
-- 🔲 Collapsed object wrapping for consistent single-line output
+- 🎯 All valid Prettier options explicitly set - *no surprises*
+- 🔲 Object wrap preserved - inline objects stay inline, expanded stay expanded
 - 🔒 Experimental options locked in - no unintended behavior on upgrades
 
 <br>
@@ -83,7 +83,7 @@ export default {
 
 ## Implementation
 
-Every valid Prettier option is explicitly set - no implicit defaults, no silent behavior on upgrades. The config enforces single quotes, no semicolons, no trailing commas, `LF` line endings and 2-space indentation across all supported file types. Object literals are preserved as-is. Experimental options are locked to their current defaults to prevent unintended formatting shifts when Prettier promotes them to stable.
+Every valid Prettier option is explicitly set - no implicit defaults, no silent behavior on upgrades. The config enforces single quotes, no semicolons, trailing commas, `LF` line endings and 2-space indentation across all supported file types. Object literals are preserved as-is. Experimental options are locked to their current defaults to prevent unintended formatting shifts when Prettier promotes them to stable.
 
 <br>
 
@@ -122,6 +122,10 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-prettie
 <br>
 
 ## Related
+
+This package is part of the [**dotfiles**](https://github.com/igorskyflyer/dotfiles) DX config suite - a curated index of independently installable configuration packages for linting, formatting, editing, JS/TS, React, Vue and many more.
+
+### Other related packages
 
 [**@igorskyflyer/editorconfig**](https://www.npmjs.com/package/@igorskyflyer/editorconfig)
 
