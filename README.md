@@ -41,6 +41,7 @@
 ## Usage
 
 Install it by executing any of the following, depending on the preferred package manager:
+
 ```bash
 bun add -d @igorskyflyer/prettier-config
 ```
