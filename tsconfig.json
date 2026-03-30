@@ -1,7 +1,7 @@
 {
   "extends": "@igorskyflyer/tsconfig",
   "include": [
-    "src/**/*"
+    "./**/*.mjs"
   ],
   "exclude": [
     "node_modules/**/*",
@@ -9,7 +9,8 @@
     "dist/**/*"
   ],
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
+    "rootDir": "./",
+    "outDir": "./dist",
+    "checkJs": true
   }
 }
