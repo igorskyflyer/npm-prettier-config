@@ -1,7 +1,7 @@
 {
   "name": "@igorskyflyer/prettier-config",
-  "version": "1.0.0",
-  "description": "💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, no trailing commas. 💄",
+  "version": "1.0.1",
+  "description": "💅🏼 Prettier config for JS/TS projects. Single quotes, no semis, LF, trailing commas. 💄",
   "type": "module",
   "sideEffects": false,
   "exports": "./prettier.config.mjs",
