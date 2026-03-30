@@ -68,10 +68,11 @@ Then, reference it in the `package.json`:
 
 <br>
 
-If overrides are needed, use a `prettier.config.js` instead:
+If overrides are needed, use a `prettier.config.mjs` instead:
 ```js
 import config from '@igorskyflyer/prettier-config'
 
+/** @type {import('prettier').Config} */
 export default {
   ...config,
   // overrides
