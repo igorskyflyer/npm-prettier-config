@@ -4,6 +4,13 @@
 
 <br>
 
+## v1.0.1 – _2026-03-30_
+
+- 📚 **docs**: add JSDocs to the example config
+- 📚 **docs**: update Features list for clarity
+
+<br>
+
 ## v1.0.0 – _2026-03-30_
 
 - 🚀 **launch**: initial release 🎉
